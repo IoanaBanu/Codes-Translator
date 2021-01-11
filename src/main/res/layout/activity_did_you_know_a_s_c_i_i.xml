@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="16dp"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:background="@color/grayscale"
+    android:paddingTop="16dp"
+    tools:context="com.example.codestranslator.MainActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="76dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginStart="75dp"
+                android:layout_marginLeft="75dp"
+                android:fontFamily="sans-serif-smallcaps"
+                android:layout_marginTop="35dp"
+                android:outlineAmbientShadowColor="@color/crystal_blue"
+                android:text="ASCII Code"
+                android:textColor="@color/gray"
+                android:textSize="0.20in" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:fontFamily="monospace"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="15dp"
+                android:text="\t\t\t\t\tASCII, abbreviated from American Standard Code for Information Interchange, is a character encoding standard for electronic communication. ASCII codes represent text in computers, telecommunications equipment, and other devices. Most modern character-encoding schemes are based on ASCII, although they support many additional characters.\nThe Internet Assigned Numbers Authority (IANA) prefers the name US-ASCII for this character encoding.\n
+\t\t\t\t\tThe American Standard Code for Information Interchange (ASCII) was developed under the auspices of a committee of the American Standards Association (ASA), called the X3 committee, by its X3.2 (later X3L2) subcommittee, and later by that subcommittee's X3.2.4 working group (now INCITS). The ASA became the United States of America Standards Institute (USASI) and ultimately the American National Standards Institute (ANSI).\n
+"
+                android:textColor="@color/dimgray"
+                android:textSize="15dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="16dp"
+                android:textColor="@color/gray"
+                android:text="How it works?\n"
+                android:textSize="22dp" />
+            <ImageView
+                android:id="@+id/imageASCII"
+                android:layout_width="match_parent"
+                android:layout_height="382dp"
+                app:srcCompat="@drawable/asciitable" />
+
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="15dp"
+                android:fontFamily="monospace"
+                android:textColor="@color/dimgray"
+                android:text="\t\t\t\t\tAll computer data is just numbers. Each character of text is stored as a number. When you press a key on the keyboard, the keyboard sends a number, corresponding to the key that was pressed. When text is displayed on your monitor, each character is read from memory as a number and “drawn” as a glyph on the display. ASCII (American Standard Code for Information Interchange) is a mapping from each character used in American English to a corresponding number.\n
+\t\t\t\t\tIn Codes Translator, you can convert your text to Decimal(it ranges from 0 to 255) and viceversa.\n"/>
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="12dp"
+                android:textColor="@color/gray"
+                android:layout_marginLeft="12dp"
+                android:layout_marginTop="16dp"
+                android:text="What is it used for?\n"
+                android:textSize="22dp" />
+            <TextView
+                android:id="@+id/textView5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/dimgray"
+                android:fontFamily="monospace"
+                android:text="\t\t\t\t\tThe ASCII code was originally developed for teletypewriters but eventually found wide application in personal computers.\n
+\t\t\t\t\tDigital computers use a binary code that is arranged in groups of eight rather than of seven digits, or bits. Each such eight-digit group is called a byte. Because digital computers use eight-bit bytes, the ASCII code is commonly embedded in an eight-bit field consisting of the seven information bits and a parity bit that is used for error-checking purposes or to represent special symbols.\n
+\t\t\t\t\tASCII offered the advantage of compatibility and allowed printers, terminals, etc from one manufacturer to be used with devices from another manufacturer.\n
+\t\t\t\t\tASCII was extended, by the ISO 8851 standards, to support glyphs from languages other than US English, and served for quite some time. Eventually a project was started to build a single mapping from glyphs to numbers that would cover every language ever used for all of history, and leave some room for new languages. That project resulted in the Unicode standard.\n\n\n"/>
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

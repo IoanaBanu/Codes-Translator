@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="16dp"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:paddingTop="16dp"
+    android:background="@color/grayscale"
+    tools:context="com.example.codestranslator.MainActivity">
+    <TextView
+        android:id="@+id/A1Z26dyk"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="19dp"
+        android:fontFamily="sans-serif-smallcaps"
+        android:text="A1Z26 Code - CLICK here to learn more"
+        android:textColor="@color/gray"/>
+    <EditText
+        android:id="@+id/txt6"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="70dp"
+        android:layout_centerHorizontal="true"
+        android:hint="Insert text"
+        android:autofillHints="" />
+    <LinearLayout
+        android:id="@+id/ctrls6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/txt6"
+        android:layout_marginTop="30dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/toAlphaBtn6"
+            style="@style/Widget.AppCompat.Button"
+            android:layout_width="140dp"
+            android:layout_height="60dp"
+            android:layout_marginRight="15dp"
+            android:text="Convert To Text"
+            app:backgroundTint="@color/gray" />
+
+        <Button
+            android:id="@+id/toA1Z26Btn"
+            style="@style/Widget.AppCompat.Button"
+            android:layout_width="140dp"
+            android:layout_height="60dp"
+            android:layout_marginRight="15dp"
+            android:text="Convert To A1Z26"
+            app:backgroundTint="@color/gray" />
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="378dp"
+        android:layout_height="match_parent"
+        android:layout_marginTop="265dp"
+        android:fillViewport="true">
+
+        <TextView
+            android:id="@+id/result6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/ctrls6"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginStart="5dp"
+            android:textColor="@color/dimgray"
+            android:textSize="22sp" />
+    </ScrollView>
+
+
+
+
+</RelativeLayout>
+
+
+
+
+

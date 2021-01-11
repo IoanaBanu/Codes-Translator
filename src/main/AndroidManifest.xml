@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.codestranslator">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/icon"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/icon"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.CodesTranslator">
+        <activity android:name=".ActivityWelcome"/>
+        <activity android:name=".DidYouKnowVigenere" />
+        <activity android:name=".DidYouKnowROT13" />
+        <activity android:name=".DidYouKnowCaesar" />
+        <activity android:name=".DidYouKnowBinary" />
+        <activity android:name=".DidYouKnowAtbash" />
+        <activity android:name=".DidYouKnowASCII" />
+        <activity android:name=".DidYouKnowA1Z26" />
+        <activity android:name=".ActivityAtbash" />
+        <activity android:name=".ActivityASCII" />
+        <activity android:name=".ActivityA1Z26" />
+        <activity android:name=".DidYouKnowMorse" />
+        <activity android:name=".ActivityBinary" />
+        <activity android:name=".ActivityVigenere" />
+        <activity android:name=".ActivityROT13" />
+        <activity android:name=".ActivityCaesar" />
+        <activity android:name=".ActivityMorse" />
+        <activity android:name=".MainActivity"
+            android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

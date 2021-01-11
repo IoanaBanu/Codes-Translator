@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="16dp"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:background="@color/light_blue"
+    android:paddingTop="16dp"
+    tools:context="com.example.codestranslator.MainActivity">
+
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="76dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginStart="75dp"
+            android:layout_marginLeft="75dp"
+            android:layout_marginTop="35dp"
+            android:fontFamily="sans-serif-smallcaps"
+            android:outlineAmbientShadowColor="@color/crystal_blue"
+            android:text="Morse Code"
+            android:textColor="@color/gray"
+            android:textSize="0.20in" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fontFamily="monospace"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="15dp"
+            android:text="\t\t\t\t\tMorse code is a method used in telecommunication to encode text characters as standardized sequences of two different signal durations, called dots and dashes or dits and dahs.\n \t\t\t\t\tMorse code is named after Samuel Morse, an inventor of the telegraph.
+\n\t\t\t\t\tThe International Morse Code encodes the 26 English letters A through Z, some non-English letters, the Arabic numerals and a small set of punctuation and procedural signals (prosigns). There is no distinction between upper and lower case letters.
+The dot duration is the basic unit of time measurement in Morse code transmission. The duration of a dash is three times the duration of a dot. Each dot or dash within a character is followed by period of signal absence, called a space, equal to the dot duration. The letters of a word are separated by a space of duration equal to three dots, and the words are separated by a space equal to seven dots.
+\n\t\t\t\t\tTo increase the efficiency of encoding, Morse code was designed so that the length of each symbol is approximately inverse to the frequency of occurrence of the character that it represents in text of the English language. Thus the most common letter in English, the letter E, has the shortest code: a single dot.
+\n\t\t\t\t\tMorse code is usually transmitted by on-off keying of an information-carrying medium such as electric current, radio waves, visible light, or sound waves. The current or wave is present during the time period of the dot or dash and absent during the time between dots and dashes.
+\n\t\t\t\t\tMorse code can be memorized, and Morse code signalling in a form perceptible to the human senses, such as sound waves or visible light, can be directly interpreted by persons trained in the skill.\n
+"
+            android:textColor="@color/dimgray"
+            android:textSize="18dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:layout_marginLeft="12dp"
+            android:layout_marginTop="16dp"
+            android:text="How it works?"
+            android:textColor="@color/gray"
+            android:textSize="22dp" />
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="match_parent"
+            android:layout_height="382dp"
+            app:srcCompat="@drawable/morse" />
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="monospace"
+            android:textSize="18dp"
+            android:textColor="@color/dimgray"
+            android:text="\t\t\t\tThere are some rules to understand Morse Code:\n
+1. The length of the dot is one unit\n
+2. A dash is three units\n
+3. The space between parts of the same letter is one unit.\n
+4. The space between letters is three units.\n
+5. The space between words is seven units.\n
+Each letter is a combination of lines and dots and in order to learn and use Morse Code, you need to learn these combinations." />
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:layout_marginLeft="12dp"
+            android:layout_marginTop="16dp"
+            android:text="What is it used for?\n"
+            android:textColor="@color/gray"
+            android:textSize="22dp" />
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="monospace"
+            android:textColor="@color/dimgray"
+            android:textSize="18dp"
+            android:text="
+- Aviation\n
+- Amateur radio\n
+- ATIS (Automatic Transmitter Identification System)\n
+- SOS Signals\n\n\n"/>
+    </LinearLayout>
+
+
+
+
+</ScrollView>
+
+
+</RelativeLayout>

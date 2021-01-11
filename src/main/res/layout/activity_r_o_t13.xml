@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_r_o_t13"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="16dp"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:paddingTop="16dp"
+
+    android:background="@color/grayscale"
+    tools:context="com.example.codestranslator.MainActivity">
+    <TextView
+        android:id="@+id/ROT13dyk"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-smallcaps"
+        android:textSize="18dp"
+        android:layout_marginTop="15dp"
+        android:textColor="@color/gray"
+            android:text="ROT13 Cipher - CLICK here to learn more"/>
+    <EditText
+        android:id="@+id/txt2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="70dp"
+        android:hint="Insert text"
+        android:layout_centerHorizontal="true"
+        android:autofillHints="" />
+    <LinearLayout
+        android:id="@+id/ctrls2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/txt2"
+        android:layout_marginTop="30dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/toAlphaBtn2"
+            android:layout_width="140dp"
+            android:layout_height="60dp"
+            android:layout_marginRight="15dp"
+            android:text="Convert To Text"
+            app:backgroundTint="@color/gray"
+            tools:ignore="ButtonStyle" />
+
+        <Button
+            android:id="@+id/toROT13Btn"
+            android:layout_width="140dp"
+            android:layout_height="60dp"
+            android:text="Convert To ROT13"
+            app:backgroundTint="@color/gray" />
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="378dp"
+        android:layout_height="match_parent"
+        android:layout_centerHorizontal="true"
+
+        android:layout_marginTop="265dp"
+        android:fillViewport="true">
+
+        <TextView
+            android:id="@+id/result2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/ctrls2"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginStart="5dp"
+            android:textColor="@color/dimgray"
+            android:textSize="22sp"
+            tools:ignore="ButtonStyle" />
+    </ScrollView>
+
+</RelativeLayout>

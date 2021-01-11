@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="16dp"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:background="@color/grayscale"
+    android:paddingTop="16dp"
+    tools:context="com.example.codestranslator.MainActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="76dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginStart="60dp"
+                android:layout_marginLeft="60dp"
+                android:fontFamily="sans-serif-smallcaps"
+                android:layout_marginTop="35dp"
+                android:outlineAmbientShadowColor="@color/crystal_blue"
+                android:text="Atbash Cipher"
+                android:textColor="@color/gray"
+                android:textSize="0.20in" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:fontFamily="monospace"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="15dp"
+                android:text="\t\t\t\t\tAtbash is a monoalphabetic substitution cipher originally used to encrypt the Hebrew alphabet.
+It can be modified for use with any known writing system with a standard collating order.\n
+\t\t\t\t\tThe name derives from the first, last, second, and second to last Hebrew letters (Aleph–Taw–Bet–Shin).\n
+\t\t\t\t\tThe Atbash cipher for the modern Hebrew alphabet would be:\n"
+                android:textColor="@color/dimgray"
+                android:textSize="15dp" />
+            <ImageView
+                android:id="@+id/imageAtbash"
+                android:layout_width="match_parent"
+                android:layout_height="382dp"
+                app:srcCompat="@drawable/hebrew" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:fontFamily="monospace"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="15dp"
+                android:text="\t\t\t\t\tSeveral biblical verses are described by commentators as being examples of Atbash:\n\n
+Jeremiah 25:26 – 'The king of Sheshach shall drink after them' – Sheshach meaning Babylon in Atbash\n\n
+Jeremiah 51:1 – 'Behold, I will raise up against Babylon, and against the inhabitants of Lev-kamai, a destroying wind.' – Lev-kamai meaning Chaldeans\n\n
+Jeremiah 51:41 – 'How has Sheshach been captured! and the praise of the whole earth taken! How has Babylon become a curse among the nations!' – Sheshach meaning Babylon\n\n
+Exodus 20:20 - 'Any place I will mention My name' - 'Any place you will mention My name', according to Yom Tov Asevilli"
+                android:textColor="@color/dimgray"
+                android:textSize="15dp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="16dp"
+                android:textColor="@color/gray"
+                android:text="How it works?\n"
+                android:textSize="22dp" />
+            <ImageView
+                android:id="@+id/imageASCII"
+                android:layout_width="match_parent"
+                android:layout_height="382dp"
+                app:srcCompat="@drawable/atbash1" />
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="15dp"
+                android:fontFamily="monospace"
+                android:textColor="@color/dimgray"
+                android:text="\t\t\t\t\tYes, it is that simple! Atbash cipher is the reversed alphabet, it means that A is Z, B is Y, etc. "/>
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="12dp"
+                android:textColor="@color/gray"
+                android:layout_marginLeft="12dp"
+                android:layout_marginTop="16dp"
+                android:text="What is it used for?\n"
+                android:textSize="22dp" />
+            <TextView
+                android:id="@+id/textView5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/dimgray"
+                android:fontFamily="monospace"
+                android:text="\t\t\t\tIt can be modified for use with any known writing system with a standard collating order.\n\n\n"/>
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

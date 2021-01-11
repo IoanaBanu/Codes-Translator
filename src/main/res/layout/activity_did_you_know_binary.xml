@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="16dp"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:background="@color/grayscale"
+    android:paddingTop="16dp"
+    tools:context="com.example.codestranslator.MainActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="76dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginStart="75dp"
+                android:layout_marginLeft="75dp"
+                android:fontFamily="sans-serif-smallcaps"
+                android:layout_marginTop="35dp"
+                android:text="Binary Code"
+                android:textColor="@color/gray"
+                android:textSize="0.20in" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="15dp"
+                android:fontFamily="monospace"
+                android:text="\t\t\t\t\tA binary code represents text, computer processor instructions, or any other data using a two-symbol system. The two-symbol system used is often '0' and '1' from the binary number system. The binary code assigns a pattern of binary digits, also known as bits, to each character, instruction, etc. For example, a binary string of eight bits can represent any of 256 possible values and can, therefore, represent a wide variety of different items.\n
+\t\t\t\t\tIn computing and telecommunications, binary codes are used for various methods of encoding data, such as character strings, into bit strings. Those methods may use fixed-width or variable-width strings. In a fixed-width binary code, each letter, digit, or other character is represented by a bit string of the same length; that bit string, interpreted as a binary number, is usually displayed in code tables in octal, decimal or hexadecimal notation. There are many character sets and many character encodings for them.\n
+\t\t\t\tA bit string, interpreted as a binary number, can be translated into a decimal number. For example, the lower case a, if represented by the bit string 01100001 (as it is in the standard ASCII code), can also be represented as the decimal number '97'."
+                android:textColor="@color/dimgray"
+                android:textSize="15dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="16dp"
+                android:textColor="@color/gray"
+                android:text="History\n"
+                android:textSize="22dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="15dp"
+                android:fontFamily="monospace"
+                android:textColor="@color/dimgray"
+                android:text="\t\t\t\tThe modern binary number system, the basis for binary code, was invented by Gottfried Leibniz in 1689 and appears in his article Explication de l'Arithmétique Binaire. The full title is translated into English as the 'Explanation of the binary arithmetic', which uses only the characters 1 and 0, with some remarks on its usefulness, and on the light it throws on the ancient Chinese figures of Fu Xi.' (1703). Leibniz's system uses 0 and 1, like the modern binary numeral system. Leibniz encountered the I Ching through French Jesuit Joachim Bouvet and noted with fascination how its hexagrams correspond to the binary numbers from 0 to 111111, and concluded that this mapping was evidence of major Chinese accomplishments in the sort of philosophical visual binary mathematics he admired. Leibniz saw the hexagrams as an affirmation of the universality of his own religious belief."
+/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="16dp"
+                android:textColor="@color/gray"
+                android:text="How it works?"
+                android:textSize="22dp" />
+            <ImageView
+                android:id="@+id/imageBinary"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:srcCompat="@drawable/binary" />
+
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="15dp"
+                android:fontFamily="monospace"
+                android:textColor="@color/dimgray"
+                android:text="\t\t\t\t\tEach letter is represented as a row of 8 characters (only 0 or 1)"/>
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="12dp"
+                android:textColor="@color/gray"
+                android:layout_marginLeft="12dp"
+                android:layout_marginTop="16dp"
+                android:text="What is it used for?\n"
+                android:textSize="22dp" />
+            <TextView
+                android:id="@+id/textView5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/dimgray"
+                android:fontFamily="monospace"
+                android:text="\t\t\t\t\tThis number system is the basis for all binary code, which is used to write data such as the computer processor instructions used every day.\n\n\n"
+                />
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="16dp"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:background="@color/grayscale"
+    android:paddingTop="16dp"
+    tools:context="com.example.codestranslator.MainActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="76dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginStart="75dp"
+                android:layout_marginLeft="75dp"
+                android:fontFamily="sans-serif-smallcaps"
+                android:layout_marginTop="35dp"
+                android:outlineAmbientShadowColor="@color/crystal_blue"
+                android:text="A1Z26 Code"
+                android:textColor="@color/gray"
+                android:textSize="0.20in" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:fontFamily="monospace"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="15dp"
+                android:text="\t\t\t\t\tThe A1Z26 code is a very simple code. As you know there are 26 letters in the American alphabet so Z would equal 26 because it is the 26th letter in the alphabet."
+                android:textColor="@color/dimgray"
+                android:textSize="15dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="16dp"
+                android:textColor="@color/gray"
+                android:text="How it works?\n"
+                android:textSize="22dp" />
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="15dp"
+                android:fontFamily="monospace"
+                android:textColor="@color/dimgray"
+                android:text="\t\t\t\t\tIt's very simple to understand and use A1Z26 Code. As the name implies, A encodes to 1, Z encodes to 26. The letter of the alphabet corresponds with the position of that letter.\n\n
+            A - 1\n
+            B - 2\n
+            C - 3\n
+            D - 4\n
+            E - 5\n
+            F - 6\n
+            G - 7\n
+            H - 8\n
+            I - 9\n
+            J - 10\n
+            K - 11\n
+            L - 12\n
+            M - 13\n
+            N - 14\n
+            O - 15\n
+            P - 16\n
+            Q - 17\n
+            R - 18\n
+            S - 19\n
+            T - 20\n
+            U - 21\n
+            V - 22\n
+            W - 23\n
+            X - 24\n
+            Y - 25\n
+            Z - 26
+"/>
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="12dp"
+                android:textColor="@color/gray"
+                android:layout_marginLeft="12dp"
+                android:layout_marginTop="16dp"
+                android:text="What is it used for?\n"
+                android:textSize="22dp" />
+            <TextView
+                android:id="@+id/textView5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/dimgray"
+                android:fontFamily="monospace"
+                android:text="\t\t\t\tThis code was used in Gravity Falls cartoon series.\n\n\n"/>
+        </LinearLayout>
+
+
+
+
+    </ScrollView>
+
+
+</RelativeLayout>
