@@ -1,0 +1,2 @@
+# Codes-Translator
+Proiect individual
